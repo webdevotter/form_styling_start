@@ -26,6 +26,8 @@
         */
         font-family: 'Raleway';
         background-color: #344a72;
+        line-height: 1.8;
+        color: #fff;
       }
 
       a {
@@ -41,18 +43,19 @@
         -I would also set a "max-width" for responsiveness
         -May want to add some padding
         */
-        display: block;
+        
         padding: 20px;
-        margin: auto;
-        max-width: 350px;
+        margin: 30px auto;
+        max-width: 400px;
       }
 
       .form-wrap {
         /* 
           This is the white area around the form and heading, etc
         */
-        background-color: white;
-        padding: 20px;
+        background: #fff;
+        padding: 15px 20px;
+        color: #333;
       }
 
       .form-wrap h1,
@@ -61,6 +64,11 @@
           May want to center these
         */
         text-align: center;
+        
+      }
+      .form-wrap p {
+        margin-bottom: 10px;
+        font-size: .9em;
       }
 
       .form-wrap .form-group {
@@ -77,8 +85,7 @@
           Label should be turned into a block element
         */
         display: block;
-        margin-bottom: 5px;
-        margin-top: 15px;
+        color: #666;
         
       }
 
@@ -86,9 +93,12 @@
         /* 
           Inputs should reach accross the .form-wrap 100% and have some padding
         */
-        border-radius: 3px;
+        
         width: 100%;
-        height: 30px;
+        padding: 10px;
+        border: #ddd 1px solid;
+        border-radius: 5px;
+        
         
       }
 
@@ -97,14 +107,18 @@
           Button should wrap accross 100% and display as block
           Background color for button is #49c1a2
         */
+        
+        background-color: #49c1a2;
         display: block;
         width: 100%;
-        background-color: #49c1a2;
         color: white;
+        padding: 10px;
+        margin-top: 20px;
+        color: #fff;
         border: none;
-        height: 30px;
-        margin-bottom: 10px;
+        cursor: pointer;
         border-radius: 5px;
+     
       }
 
       .form-wrap button:hover {
@@ -118,23 +132,19 @@
         /* 
           Bottom text is smaller
         */
-        font-size: .75em;
+        font-size: .81em;
+        margin-top: 20px;
     
       }
 
-      .form-wrap p {
-        font-size: .9em;
-        margin-top: 10px;
-      }
-
+    
       footer {
         /* 
         Should be centered
        */
        text-align: center;
        margin-top: 10px;
-       color: white;
-       font-size: .8em;
+       
       }
 
       footer a {
@@ -143,13 +153,14 @@
         */
         color: #49c1a2;
       }
+
     </style>
   </head>
   <body>
     <div id="container">
       <div class="form-wrap">
         <h1>Sign Up</h1>
-        <p><strong>It's free and only takes a minute</strong></p>
+        <p> It's free and only takes a minute </p>
         <form>
           <div class="form-group">
             <label for="first-name">First Name</label>
